@@ -110,4 +110,28 @@ label::before {
   color: var(--main-purple-color);
   font-size: 5rem;
   margin-bottom: 1rem;
+  animation: to-left 1s ease-in-out;
+}
+.card label h2 {
+  animation: to-right 1s ease-in-out;
+}
+@keyframes to-left {
+  from {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes to-right {
+  from {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
